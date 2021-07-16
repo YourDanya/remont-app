@@ -1,0 +1,28 @@
+.footer{
+    position: relative;
+    z-index: -10;
+    background-color: #212529;
+    height: 80px;
+    width: 100%;
+}
+
+.footerSocials{
+    /*padding-left: 50px;*/
+    /*padding-right: 50px;*/
+    display: flex;
+    align-items: center;
+    justify-content: space-around;
+    height: 80px;
+}
+
+.footerSocials a{
+    color: white;
+    font-size: 40px
+}
+
+.footerCopyright{
+    color: white;
+    position: absolute;
+    bottom: 4px;
+    right: 4px;
+}
