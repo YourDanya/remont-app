@@ -6,10 +6,6 @@ import {toggleActiveClass} from "../../redux/nav-reducer";
 import {connect} from "react-redux";
 class Nav extends React.Component{
 
-    toggleActiveClass() {
-
-    }
-
     render(){
         return <div className={styles.nav}>
             <div className={mainStyles.container}>
