@@ -7,6 +7,7 @@ import AboutUs from "./components/AboutUs/AboutUs";
 import ExamplesOfWork from "./components/ExamplesOfWork/ExamplesOfWork";
 import Warranties from "./components/Warranties/Warranties";
 import styles from './App.module.css'
+import Slider from './components/MySlider/MySlider1'
 function App(props) {
   return (
       <BrowserRouter >
@@ -20,6 +21,8 @@ function App(props) {
                      render={() => <ExamplesOfWork/> }/>
               <Route path='/warranties'
                      render={() => <Warranties/> }/>
+              <Route path='/slider'
+                     render={() => <Slider/> }/>
           </div>
           <Footer/>
       </BrowserRouter>

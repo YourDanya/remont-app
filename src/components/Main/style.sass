@@ -1,0 +1,76 @@
+@import "../../_utilities"
+$arrow: url('../../images/icons/arrow.png')
+$arrow-hover:   url('../../images/icons/arrow-hover.png')
+$arrow-transform: translateX(-50%) translateY(-50%) scaleX(-1)
+
+.main
+    display: flex
+    width: 100%
+    height: 100%
+    transition: background-image 0.5s
+    background-size: cover
+
+    .title-container
+        height: 500px
+        width: 500px
+
+        margin-bottom: 0
+
+        left: 5%
+        margin-top: auto
+        margin-left: 2vw
+
+        opacity: 60%
+        background-color: #102338
+
+        button
+            height: 75px
+            width: 200px
+
+            position: relative
+            top: 60%
+            left: 40%
+
+            background-color: #b6955700
+            color: $attention-color
+            border: $attention-color solid 3px
+            font-size: 20px       
+
+            &::before
+                content: $arrow
+                font-size: 40px
+                position: absolute
+                left: 0
+                top: 50%
+                transform: $arrow-transform
+
+            &:hover
+                color: $hover-color
+                border: $hover-color solid 3px
+
+                &::before
+                    content: $arrow-hover  
+    .bg
+        display: block
+        width: 100vw
+        height: 100vh
+        object-fit: cover
+
+@media screen and ( max-width: $layout-breakpoint-small )
+    .main
+        height: 70vh
+        .title-container
+            height: 300px
+            width: 300px
+
+            margin-left: 10vw
+
+            button
+                height: 50px
+                width: 125px
+
+                left:30%
+                top: 70%
+
+                &::before
+                    display: none

@@ -1,0 +1,79 @@
+
+@import  "../../../_utilities"
+
+.slide
+    max-width: 400px
+    min-width: 250px
+    margin: 0 auto
+    margin: 20px
+    border: solid black 1px
+    
+    .container
+        padding-top: 100% /* 1:1 Aspect Ratio */
+        position: relative
+        width: 100%
+
+        .sub-container
+            position: absolute
+            top: 0
+            left: 0
+            bottom: 0
+            right: 0
+
+            border: solid black 1px
+
+            .slide-img
+                display: block
+                width: 100%
+                max-height: 70%
+                object-fit: cover
+
+            .duration-container
+                display: flex
+                justify-content: center
+                align-items: center
+
+                position: absolute
+                top: 40%
+                left: 65%
+
+                width: fit-content
+                margin: 0
+                height: 25%
+                width: 25%
+
+                text-align: center
+
+                background-color: $attention-color
+
+                .duration
+                    position: relative
+
+                    .number
+                        font-size: 30px
+
+                    .text
+                        font-size: 15px
+
+            .description
+
+                .header
+                    font-size: 30px
+                    margin-top: 15px
+
+                .address
+                    font-size: 15px
+                    margin-top: 15px
+
+@media screen and ( max-width: $layout-breakpoint-medium )
+    .slide
+        height: 400px
+        margin: 0 auto
+@media screen and ( max-width: $layout-breakpoint-small)
+    .slide
+        height: 400px
+        margin: 0 auto
+
+        .duration-container
+            width: 70px
+            height: 70px
