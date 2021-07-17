@@ -22,7 +22,8 @@ function App(props) {
               <Route path='/warranties'
                      render={() => <Warranties/> }/>
               <Route path='/slider'
-                     render={() => <Slider/> }/>
+                     render={() => <div><Slider/></div> }/>
+                            
           </div>
           <Footer/>
       </BrowserRouter>
