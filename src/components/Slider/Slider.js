@@ -7,19 +7,19 @@ import {images} from './API'
 
 import React from 'react'
 
-function MySlider1() {
+function Slider() {
   return (
-    <div className='mySlider'>
+    <div className='slider-container'>
       <Carousel
         customButtonGroup={<ButtonGroup />}
         additionalTransfrom={0}
         arrows={false}
         autoPlaySpeed={3000}
         centerMode={false}
-        className="slider-1"
+        className="slider"
         containerClass=""
         dotListClass=""
-        draggable={false}
+        draggable
         focusOnSelect={false}
         infinite
         itemClass=""
@@ -56,18 +56,17 @@ function MySlider1() {
         showDots={false}
         sliderClass=""
         slidesToSlide={1}
-        swipeable={false}
+        swipeable
       >
         {
           images.map(img => 
             <Slide slide={{description: {header: 'Slide Header', address: 'ЖК Царская площадь, пр. Ленинградский, 3'}, duration: '2 hours', img}} />
           )
         }
-{/* images/examplesOfWork/ex1.png */}
       </Carousel>
     </div>
   )
 }
 
-export default MySlider1
+export default Slider
 

@@ -1,5 +1,5 @@
 import React from "react";
-import Slider from '../MySlider/MySlider1'
+import Slider from '../Slider/Slider'
 import styles from './ExamplesOfWork.module.css'
 const ExamplesOfWork = () => {
     return (

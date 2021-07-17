@@ -2,13 +2,12 @@
 @import  "../../../_utilities"
 
 .slide
-    max-width: 400px
-    min-width: 250px
+    max-width: 90% 
+    min-width: 200px
     margin: 0 auto
-    border: solid black 1px
     
     .container
-        padding-top: 100% /* 1:1 Aspect Ratio */
+        padding-top: 100% 
         position: relative
         width: 100%
 
@@ -18,8 +17,6 @@
             left: 0
             bottom: 0
             right: 0
-
-            border: solid black 1px
 
             .slide-img
                 display: block
@@ -58,21 +55,34 @@
 
                 .header
                     font-size: 30px
-                    margin-top: 15px
+                    margin-top: 0.5em
 
                 .address
                     font-size: 15px
-                    margin-top: 15px
+                    margin-top: 0.5em
+
+@media screen and ( max-width: $layout-breakpoint-big )
+    .slide
+        max-width: 90%                 
 
 @media screen and ( max-width: $layout-breakpoint-medium )
     .slide
-        height: 400px
-        margin: 0 auto
+        max-width: 85% 
+
 @media screen and ( max-width: $layout-breakpoint-small)
     .slide
-        height: 400px
-        margin: 0 auto
+        max-width: 70%
+
+        .container
+            padding-top: 120%
+
+        .header
+            font-size: 20px !important
+
+        .address
+            font-size: 10px !important
 
         .duration-container
             width: 70px
             height: 70px
+
