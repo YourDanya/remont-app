@@ -1,0 +1,35 @@
+.aboutUs{
+    padding-top: 120px;
+    padding-bottom: 100px;
+}
+
+
+.first{
+    display: flex;
+    justify-content: space-around;
+}
+
+.img1{
+    height: 300px
+}
+
+.second{
+    display: flex;
+    margin-top: 80px;
+}
+
+.title{
+    font-size: 30px;
+}
+
+.text{
+    margin-top: 15px
+}
+
+.about{
+    width: 400px;
+}
+
+.differences{
+
+}
