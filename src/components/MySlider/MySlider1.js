@@ -9,7 +9,7 @@ import React from 'react'
 
 function MySlider1() {
   return (
-    <div className=''>
+    <div className='mySlider'>
       <Carousel
         customButtonGroup={<ButtonGroup />}
         additionalTransfrom={0}

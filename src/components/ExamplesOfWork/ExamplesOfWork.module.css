@@ -1,0 +1,11 @@
+.examplesOfWork{
+    position: relative;
+    padding-top: 100px;
+}
+
+.title{
+    font-size: 35px;
+    text-align: center;
+    font-weight: 700;
+    margin-bottom: 30px;
+}

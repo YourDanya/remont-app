@@ -1,11 +1,11 @@
 import React from "react";
 import Slider from '../MySlider/MySlider1'
-
+import styles from './ExamplesOfWork.module.css'
 const ExamplesOfWork = () => {
     return (
-        <div>
-            <h1>ExamplesOfWork</h1>
-            <Slider />
+        <div className={styles.examplesOfWork}>
+            <div className={styles.title}>Примеры работ</div>
+            <Slider/>
         </div>
     )
 
