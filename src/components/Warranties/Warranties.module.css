@@ -1,0 +1,46 @@
+.warranties{
+    padding: 100px;
+    /*padding-top: 100px;*/
+    display:flex;
+    justify-content: space-between;
+}
+
+.content{
+    display: flex;
+    margin-top: 90px;
+    position: relative;
+}
+
+.title{
+    margin-top: 50px;
+    font-size: 70px;
+    font-weight: 300;
+}
+
+.img{
+    height: 600px
+}
+
+.item{
+    padding-right: 50px;
+    font-size: 20px;
+    position: relative;
+    padding-left: 70px;
+}
+
+.icon{
+    position: absolute;
+    top: 0;
+    transform: translateX(-120%);
+    font-size: 50px;
+}
+
+.abs{
+    position: absolute;
+    bottom:0;
+    right: 0;
+    height: 600px;
+    z-index: -10000;
+    width: 350px;
+    background-color: #c8dbe7;
+}
