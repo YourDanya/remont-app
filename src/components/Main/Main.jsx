@@ -1,30 +1,34 @@
 import React from "react";
 import { useState, useEffect } from "react";
 import './style.sass'
+import {images} from './API'
+
+
+
 const Main = () => {
     const [index, setIndex] = useState(0)
-    const numberOfFiles = 4
-    let bgArray = ((numberOfFiles) => {
-        const array = []
-        const dirAddress = '/images/background/'
-        for (let i = numberOfFiles; i > 0; i--) {
-            array.push(dirAddress + 'bg' + i + '.jpg')
-        }
-        return array
-    })(numberOfFiles)
+    const imgContainerRef = React.useRef()
+    const imgRef = React.useRef()
+
+    useEffect(() => {
+        console.log(imgRef.current.offsetRight)
+        imgContainerRef.current.scrollTo((imgContainerRef.current.scrollWidth)/2, 0)
+    })
 
     useEffect(() => {
         const interval = setInterval(() => {
-            index >= numberOfFiles - 1 ? setIndex(0) : setIndex(index + 1)
+            index >= images.length - 1 ? setIndex(0) : setIndex(index + 1)
         }, 10000)
         return () => clearInterval(interval)
     }, [index])
 
     return (
-        <div className='main' style={{backgroundImage: `url(${bgArray[index]})`}}>
+        <div className='main'>
+            <div className="img-container" ref={imgContainerRef}>
+              <img src={images[index]} alt="" className='main-img' ref={imgRef}/>
+            </div>
             <div className="title-container">
-                <h2></h2>
-                <h1></h1>
+                <div className='title'>cкидка 10% <span>на ремонт квартирі</span></div>        
                 <button>Ltnfkmysit</button>
             </div>
         </div>
