@@ -33,7 +33,7 @@ const AboutUs= () =>{
                 </ul>
             </div>
 
-            <img src={img2} className={styles.img1} alt="image2"/>
+            <img src={img2} className={styles.img2} alt="image2"/>
 
         </div>
 

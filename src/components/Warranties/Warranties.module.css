@@ -1,0 +1,197 @@
+.universe{
+    position: relative;
+}
+
+.warranties{
+    padding: 100px 0;
+    display:flex;
+    justify-content: space-between;
+    position: relative;
+}
+
+.container{
+    max-width: 1200px;
+    margin: 0 auto;
+}
+
+.content{
+    width: 70%;
+}
+
+.warrantiesText{
+    display: flex;
+    /*justify-content: space-between;*/
+    margin-top: 90px;
+}
+
+.title{
+    padding-top: 50px;
+    font-size: 70px;
+    font-weight: 300;
+}
+
+.img{
+    height: 600px;
+}
+
+.item{
+    padding-left: 10%;
+    padding-right: 10%;
+    position: relative;
+    font-size: 20px;
+}
+
+.icon{
+    position: absolute;
+    top: 0;
+    transform: translateX(-120%);
+    font-size: 50px;
+}
+
+.abs{
+    position: absolute;
+    bottom: 5%;
+    right: 2%;
+    height: 60%;
+    z-index: -100000;
+    width: 25%;
+    background-color: #c8dbe7;
+}
+
+@media (max-width: 1220px) {
+    .img{
+        height: 500px;
+    }
+    .container{
+        max-width: 1000px;
+    }
+    .item{
+        font-size: 16px;
+    }
+    .icon{
+        font-size: 40px
+    }
+    /*.abs{*/
+    /*    bottom: 150px;*/
+    /*    height: 450px;*/
+    /*    width: 300px*/
+    /*}*/
+    .warrantiesText{
+        display: flex;
+        margin-top: 90px;
+    }
+
+}
+
+@media (max-width: 1090px) {
+    .abs{
+        bottom: 10%;
+        width: 30%;
+    }
+}
+
+
+@media (max-width: 1000px) {
+    .container{
+        max-width: 720px;
+    }
+
+    .warrantiesText{
+        margin-top: 50px;
+    }
+
+    .img{
+        height: 420px
+    }
+
+    /*.abs{*/
+    /*    bottom: 250px;*/
+    /*    height: 400px;*/
+    /*    width: 250px*/
+    /*}*/
+
+    .abs{
+
+    }
+}
+
+@media (max-width: 760px) {
+
+
+    .warranties{
+        flex-direction: column;
+        justify-content: center;
+        align-items: center;
+    }
+    .container{
+        max-width: 400px;
+    }
+    .content{
+        width: 100%
+    }
+    .warrantiesText{
+        justify-content: space-around;
+    }
+    .img{
+        padding-top: 40px;
+    }
+    .item{
+        padding: 0;
+    }
+    /*.abs{*/
+    /*    bottom: -20px;*/
+    /*    right: 100px;*/
+    /*    height: 400px;*/
+    /*    width: 300px*/
+    /*}*/
+
+    .abs{
+        height: 40%;
+        right: 15%;
+        width: 45%;
+        bottom: 5%;
+    }
+}
+
+
+@media (max-width: 550px) {
+    /*.abs{*/
+    /*    right: 0px;*/
+    /*    width: 270px;*/
+    /*    height: 350px;*/
+    /*    bottom: 30px*/
+    /*}*/
+
+    .abs{
+        width: 60%;
+        height: 40%;
+        right: 5%;
+        bottom: 7%;
+    }
+
+    .warrantiesText{
+        padding-left: 10%;
+    }
+    .item{
+        font-size: 16px;
+        line-height: 18px;
+    }
+    .icon{
+        font-size: 30px;
+    }
+    .title{
+        text-align: center;
+    }
+    .img{
+        height: 380px
+    }
+}
+
+@media (max-width: 400px) {
+  .abs{
+      bottom: 8%;
+      right:0;
+      width: 70%
+  }
+}
+

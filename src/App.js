@@ -21,7 +21,6 @@ function App(props) {
                      render={() => <ExamplesOfWork/> }/>
               <Route path='/warranties'
                      render={() => <Warranties/> }/>
-                            
           </div>
           <Footer/>
       </BrowserRouter>

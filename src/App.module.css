@@ -1,3 +1,4 @@
+
 .container{
   max-width: 900px;
   margin: 0 auto
@@ -5,4 +6,22 @@
 
 .appContent{
     min-height: 800px;
+}
+
+@media (max-width: 1263px) {
+    .container{
+        max-width: 800px;
+    }
+}
+
+@media (max-width: 857px) {
+    .container{
+        max-width: 700px;
+    }
+}
+
+@media (max-width: 1220px) {
+    /*.appContent{*/
+    /*    min-height: 800px;*/
+    /*}*/
 }
