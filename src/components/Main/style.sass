@@ -2,18 +2,35 @@
 $arrow: url('../../images/icons/arrow.png')
 $arrow-hover: url('../../images/icons/arrow-hover.png')
 $arrow-transform: translateX(-50%) translateY(-50%) scaleX(-1)
+@keyframes fade-out-animation
+    0%
+        opacity: 1
+
+    100%
+        opacity: 0
 
 .main
     position: relative
+    
+
     .img-container
         width: 100vw
-        overflow: auto
-
+        height: 50vw
+        overflow: hidden
+        position: relative
+        min-width: 300px
+    
         .main-img
-            margin-left: 50vw
             display: block
+            position: absolute
+            transform: translateX(calc( 50vw - 50% ))
+            top: 0
             height: 100%
-            object-fit: contain
+
+            &.fade-out
+                animation: fade-out-animation 1s
+                opacity: 0
+
 
     .title-container
         height: 550px
@@ -22,7 +39,7 @@ $arrow-transform: translateX(-50%) translateY(-50%) scaleX(-1)
         position: absolute
         bottom: 0
 
-        left: 30px
+        left: 100px
         margin-top: auto
 
         background-color: #102338b7
@@ -43,6 +60,7 @@ $arrow-transform: translateX(-50%) translateY(-50%) scaleX(-1)
                 line-height: 80px
                 left: 20%
                 font-weight: bold
+                margin-top: 0.5em
 
         button
             height: 75px
@@ -80,11 +98,15 @@ $arrow-transform: translateX(-50%) translateY(-50%) scaleX(-1)
 
 @media screen and ( max-width: $layout-breakpoint-big  )
     .main
+        .img-container
+            height: 700px
+
         .title-container
             width: 500px
-            height:500px
-                
-            .title 
+            height: 500px
+            left: 50px
+
+            .title
                 width: 700px
 
             .img-container
@@ -95,12 +117,12 @@ $arrow-transform: translateX(-50%) translateY(-50%) scaleX(-1)
         .img-container
             height: 550px
 
-
         .title-container
-            height: 300px
-            width: 300px
+            height: 280px
+            width: 280px
 
             left: 20px
+            
 
             .title
                 width: 250px
@@ -110,7 +132,6 @@ $arrow-transform: translateX(-50%) translateY(-50%) scaleX(-1)
                 span
                     font-size: 35px
                     line-height: 35px
-                    
 
             button
                 height: 50px
