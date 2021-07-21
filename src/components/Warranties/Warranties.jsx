@@ -5,7 +5,7 @@ import img from "./warr_img.jpg"
 import {FaPencilAlt, FaRuler, GiInjustice} from "react-icons/all";
 
 const Warranties= () =>{
-    return <div >
+    return <div className={styles.universe}>
         <div className={styles.warranties+' '+styles.container}>
             <div className={styles.content}>
                 <div className={styles.title}>Гарантии</div>
