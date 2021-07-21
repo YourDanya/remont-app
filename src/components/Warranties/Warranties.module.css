@@ -58,7 +58,7 @@
     background-color: #c8dbe7;
 }
 
-@media (max-width: 1220px) {
+@media (max-width: 1290px) {
     .img{
         height: 500px;
     }
@@ -71,27 +71,23 @@
     .icon{
         font-size: 40px
     }
-    /*.abs{*/
-    /*    bottom: 150px;*/
-    /*    height: 450px;*/
-    /*    width: 300px*/
-    /*}*/
     .warrantiesText{
         display: flex;
         margin-top: 90px;
     }
-
 }
+
 
 @media (max-width: 1090px) {
     .abs{
         bottom: 10%;
         width: 30%;
+        right: 0;
     }
 }
 
 
-@media (max-width: 1000px) {
+@media (max-width: 1040px) {
     .container{
         max-width: 720px;
     }
@@ -104,19 +100,12 @@
         height: 420px
     }
 
-    /*.abs{*/
-    /*    bottom: 250px;*/
-    /*    height: 400px;*/
-    /*    width: 250px*/
-    /*}*/
-
     .abs{
-
+        right: 5%
     }
 }
 
-@media (max-width: 760px) {
-
+@media (max-width: 840px) {
 
     .warranties{
         flex-direction: column;
@@ -138,12 +127,6 @@
     .item{
         padding: 0;
     }
-    /*.abs{*/
-    /*    bottom: -20px;*/
-    /*    right: 100px;*/
-    /*    height: 400px;*/
-    /*    width: 300px*/
-    /*}*/
 
     .abs{
         height: 40%;
@@ -155,12 +138,6 @@
 
 
 @media (max-width: 550px) {
-    /*.abs{*/
-    /*    right: 0px;*/
-    /*    width: 270px;*/
-    /*    height: 350px;*/
-    /*    bottom: 30px*/
-    /*}*/
 
     .abs{
         width: 60%;
