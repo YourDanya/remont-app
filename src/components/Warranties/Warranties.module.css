@@ -1,31 +1,40 @@
 .warranties{
-    padding: 100px;
-    /*padding-top: 100px;*/
+    padding: 100px 0;
     display:flex;
     justify-content: space-between;
-}
-
-.content{
-    display: flex;
-    margin-top: 90px;
     position: relative;
 }
 
+.container{
+    max-width: 1200px;
+    margin: 0 auto;
+}
+
+.content{
+    width: 70%;
+}
+
+.warrantiesText{
+    display: flex;
+    /*justify-content: space-between;*/
+    margin-top: 90px;
+}
+
 .title{
-    margin-top: 50px;
+    padding-top: 50px;
     font-size: 70px;
     font-weight: 300;
 }
 
 .img{
-    height: 600px
+    height: 600px;
 }
 
 .item{
-    padding-right: 50px;
-    font-size: 20px;
+    padding-left: 10%;
+    padding-right: 10%;
     position: relative;
-    padding-left: 70px;
+    font-size: 20px;
 }
 
 .icon{
@@ -37,10 +46,99 @@
 
 .abs{
     position: absolute;
-    bottom:0;
+    bottom: 0px;
     right: 0;
     height: 600px;
-    z-index: -10000;
+    z-index: -100000;
     width: 350px;
     background-color: #c8dbe7;
+}
+
+@media (max-width: 1220px) {
+    .img{
+        height: 500px;
+    }
+    .container{
+        max-width: 1000px;
+    }
+    .item{
+        font-size: 16px;
+    }
+    .icon{
+        font-size: 40px
+    }
+    .abs{
+        bottom: 150px;
+        height: 450px;
+        width: 300px
+    }
+    .warrantiesText{
+        display: flex;
+        margin-top: 90px;
+    }
+}
+
+@media (max-width: 1000px) {
+    .container{
+        max-width: 720px;
+    }
+
+    .warrantiesText{
+        margin-top: 50px;
+    }
+
+    .img{
+        height: 420px
+    }
+
+    .abs{
+        bottom: 250px;
+        height: 400px;
+        width: 250px
+    }
+}
+
+@media (max-width: 760px) {
+    .warranties{
+        flex-direction: column;
+        justify-content: center;
+        align-items: center;
+    }
+    .container{
+        max-width: 400px;
+    }
+    .content{
+        width: 100%
+    }
+    .warrantiesText{
+        justify-content: space-around;
+    }
+    .img{
+        padding-top: 40px;
+        width: 100%;
+    }
+    .item{
+        padding: 0;
+    }
+    .abs{
+        bottom: -20px;
+        height: 400px;
+        width: 350px
+    }
+}
+
+@media (max-width: 500px) {
+    .abs{
+        bottom: 0px;
+        width: 270px;
+    }
+    .img{
+        width: 80%;
+    }
+    .warrantiesText{
+        padding-left: 10%;
+    }
+    .title{
+        text-align: center;
+    }
 }

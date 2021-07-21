@@ -8,7 +8,7 @@
 
 .menu{
     display: flex;
-    justify-content: space-between;
+    justify-content: space-around;
     align-items: center;
     height: 55px;
 }
@@ -74,9 +74,19 @@
     transform: translateY(-7px) rotate(45deg);;
 }
 
-@media(max-width: 767px) {
+@media(max-width: 1054px) {
+    .menu a:last-child{
+        padding-right: 60px
+    }
+}
+
+@media(max-width: 960px) {
     .hamburger{
         display: flex;
+    }
+
+    .menu a:last-child{
+        padding-right: 0px
     }
 
     .menu{
@@ -101,6 +111,9 @@
         left: 0
     }
 }
+
+
+
 
 @media(max-width: 544px) {
     .menu{
