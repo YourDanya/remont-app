@@ -1,40 +1,79 @@
 @import "../../_utilities"
 $arrow: url('../../images/icons/arrow.png')
-$arrow-hover:   url('../../images/icons/arrow-hover.png')
+$arrow-hover: url('../../images/icons/arrow-hover.png')
 $arrow-transform: translateX(-50%) translateY(-50%) scaleX(-1)
+@keyframes fade-out-animation
+    0%
+        opacity: 1
+
+    100%
+        opacity: 0
 
 .main
-    display: flex
-    width: 100%
-    height: 100%
-    transition: background-image 0.5s
-    background-size: cover
+    position: relative
+    
+
+    .img-container
+        width: 100vw
+        height: 50vw
+        overflow: hidden
+        position: relative
+        min-width: 300px
+    
+        .main-img
+            display: block
+            position: absolute
+            transform: translateX(calc( 50vw - 50% ))
+            top: 0
+            height: 100%
+
+            &.fade-out
+                animation: fade-out-animation 1s
+                opacity: 0
+
 
     .title-container
-        height: 500px
-        width: 500px
+        height: 550px
+        width: 550px
 
-        margin-bottom: 0
+        position: absolute
+        bottom: 0
 
-        left: 5%
+        left: 100px
         margin-top: auto
-        margin-left: 2vw
 
-        opacity: 60%
-        background-color: #102338
+        background-color: #102338b7
+
+        .title
+            position: relative
+            width: 800px
+            left: 10%
+            top: 10%
+            font-weight: 200
+            color: $hover-color
+            font-size: 50px
+
+            span
+                display: block
+                color: $attention-color
+                font-size: 80px
+                line-height: 80px
+                left: 20%
+                font-weight: bold
+                margin-top: 0.5em
 
         button
             height: 75px
             width: 200px
 
-            position: relative
+            position: absolute
             top: 60%
             left: 40%
 
             background-color: #b6955700
             color: $attention-color
             border: $attention-color solid 3px
-            font-size: 20px       
+            font-size: 20px
 
             &::before
                 content: $arrow
@@ -49,27 +88,56 @@ $arrow-transform: translateX(-50%) translateY(-50%) scaleX(-1)
                 border: $hover-color solid 3px
 
                 &::before
-                    content: $arrow-hover  
+                    content: $arrow-hover
+
     .bg
         display: block
         width: 100vw
         height: 100vh
-        object-fit: cover
+        object-fit: contain
 
-@media screen and ( max-width: $layout-breakpoint-small )
+@media screen and ( max-width: $layout-breakpoint-big  )
     .main
-        height: 70vh
-        .title-container
-            height: 300px
-            width: 300px
+        .img-container
+            height: 700px
 
-            margin-left: 10vw
+        .title-container
+            width: 500px
+            height: 500px
+            left: 50px
+
+            .title
+                width: 700px
+
+            .img-container
+                height: 700px
+
+@media screen and ( max-width: $layout-breakpoint-medium )
+    .main
+        .img-container
+            height: 550px
+
+        .title-container
+            height: 280px
+            width: 280px
+
+            left: 20px
+            
+
+            .title
+                width: 250px
+                top: 15%
+                font-size: 30px
+
+                span
+                    font-size: 35px
+                    line-height: 35px
 
             button
                 height: 50px
                 width: 125px
 
-                left:30%
+                left: 30%
                 top: 70%
 
                 &::before
