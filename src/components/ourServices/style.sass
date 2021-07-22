@@ -1,0 +1,66 @@
+@import '../../_utilities'
+
+.services-container
+    height: 500px
+    display: grid
+    grid-template-columns: 1fr 1fr
+    grid-gap: 10px
+    padding: 10px
+
+    .services-img
+        width: 90%
+        max-width: 500px
+        height: 300px
+        margin: 0 auto
+        margin-top: 40px
+
+        background-image: url('../../images/background/bg1.jpg')
+        background-position: center
+        background-size: cover
+
+        border: 10px solid $attention-color
+        border-radius: 40px
+
+    .services
+        height: 500px
+        display: grid
+        grid-template-columns: 1fr 1fr
+        grid-gap: 3vw
+        padding: 10px
+
+        .service
+            height: 50px
+            display: flex
+            justify-content: space-around
+            position: relative
+            transform: translateY(50%)
+
+            background-color: #fff
+            border: $attention-color 5px solid
+            color: $attention-color
+            border-radius: 30px
+
+            img
+                height: 100%
+                display: block
+
+            span
+                display: block
+                transform: translateY(50%)
+                text-align: center
+                height: fit-content
+
+@media screen and ( max-width: $layout-breakpoint-small  )
+    .service
+        grid-gap: 10px
+
+@media screen and ( max-width: $layout-breakpoint-medium )
+    .services-container
+        grid-template-columns: 1fr
+
+@media screen and ( max-width: $layout-breakpoint-small )
+
+    .services-container
+
+        .services
+            grid-template-columns: 1fr

@@ -59,8 +59,8 @@ function Slider() {
         swipeable
       >
         {
-          images.map(img => 
-            <Slide slide={{description: {header: 'Slide Header', address: 'ЖК Царская площадь, пр. Ленинградский, 3'}, duration: '2 hours', img}} />
+          images.map((img, index) => 
+            <Slide slide={{description: {header: 'Slide Header', address: 'ЖК Царская площадь, пр. Ленинградский, 3'}, duration: `${index}`, img}} />
           )
         }
       </Carousel>

@@ -8,13 +8,15 @@ import ExamplesOfWork from "./components/ExamplesOfWork/ExamplesOfWork";
 import Warranties from "./components/Warranties/Warranties";
 import styles from './App.module.css'
 import Slider from './components/Slider/Slider'
+import Services from "./components/ourServices/Services";
 function App(props) {
   return (
       <BrowserRouter >
           <Nav store={props.store}/>
           <div className={styles.appContent}>
               <Route path='/main'
-                     render={() => <Main/> }/>
+                     render={() => <div><Main/><Services />
+                            </div> }/>
               <Route path='/aboutUs'
                      render={() => <AboutUs/> }/>
               <Route path='/examplesOfWork'
