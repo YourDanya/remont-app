@@ -8,21 +8,21 @@ const Footer= () =>{
     return <div className={styles.footer}>
         <div className={mainStyles.container}>
             <div className={styles.footerSocials}>
-                <NavLink to="https://www.facebook.com/Galkosta-854548818029521/" >
+                <a href="https://www.google.com">
                     <FaFacebook/>
-                </NavLink>
-                <NavLink to="https://www.instagram.com/galkosta_syvak/" >
+                </a>
+                <a href="https://www.instagram.com/abn.bud/">
                     <FiInstagram/>
-                </NavLink>
-                <NavLink to="https://www.instagram.com/galkosta_syvak/" >
+                </a>
+                <a href="https://t.me/abnbud">
                     <FaTelegram/>
-                </NavLink>
-                <NavLink to="https://www.instagram.com/galkosta_syvak/" >
+                </a>
+                <a href="viber://chat?number=%2B380987792907">
                     <FaViber/>
-                </NavLink>
-                <NavLink to="https://www.instagram.com/galkosta_syvak/" >
+                </a>
+                <a href="https://wa.me/380987792907">
                     <IoLogoWhatsapp/>
-                </NavLink>
+                </a>
             </div>
             <div className={styles.footerCopyright}>© ABN-BUD 2021. COPYRIGHT</div>
         </div>

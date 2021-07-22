@@ -25,15 +25,19 @@
     transform: translateY(-50%);
     right: 0;
     color: #fff;
-    padding-right: 20px;
+    padding-right: 5px;
 }
 
-.mail{
+.mail a{
+    text-decoration: none;
+    color: white;
     font-size: 15px;
 }
 
-.number{
+.number a{
     font-size: 20px;
+    text-decoration: none;
+    color: white;
 }
 
 .hamburger {
@@ -74,13 +78,14 @@
     transform: translateY(-7px) rotate(45deg);;
 }
 
-@media(max-width: 1054px) {
+
+@media(max-width: 1127px) {
     .menu a:last-child{
         padding-right: 60px
     }
 }
 
-@media(max-width: 960px) {
+@media(max-width: 1000px) {
     .hamburger{
         display: flex;
     }

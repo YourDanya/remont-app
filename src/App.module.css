@@ -1,11 +1,11 @@
 
 .container{
-  max-width: 900px;
+  max-width: 800px;
   margin: 0 auto
 }
 
 .appContent{
-    min-height: 800px;
+    min-height: 700px;
 }
 
 @media (max-width: 1263px) {
@@ -20,8 +20,8 @@
     }
 }
 
-@media (max-width: 1220px) {
-    /*.appContent{*/
-    /*    min-height: 800px;*/
-    /*}*/
+@media (max-width: 800px) {
+    .appContent{
+        min-height: 500px;
+    }
 }

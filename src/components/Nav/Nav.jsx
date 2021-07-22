@@ -18,8 +18,12 @@ class Nav extends React.Component{
                 </div>
             </div>
             <div className={styles.navInfo}>
-                <div className={styles.number}>+7 495 665 22 72</div>
-                <div className={styles.mail}>sales@remontprofi.ru</div>
+                <div className={styles.number}>
+                    <a href="tel:+380987792907">+380 (98) 779 2907</a>
+                    </div>
+                <div className={styles.mail}>
+                    <a href="mail:sales@remontprofi.ru">pochtaformumumu@gmail.com</a>
+                    </div>
             </div>
             <div className={styles.hamburger+' '+ (
                 this.props.isActive ? styles.hamburgerActive: '')} onClick={this.props.toggleActiveClass}>
