@@ -2,6 +2,7 @@ import React from "react";
 import { useState, useEffect } from "react";
 import './style.sass'
 import {images} from './API'
+import Services from "../ourServices/Services";
 
 
 
