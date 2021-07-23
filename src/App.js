@@ -14,7 +14,7 @@ function App(props) {
       <BrowserRouter >
           <Nav store={props.store}/>
           <div className={styles.appContent}>
-              <Route path='/main'
+              <Route path='/' exact
                      render={() => <div><Main/><Services />
                             </div> }/>
               <Route path='/aboutUs'

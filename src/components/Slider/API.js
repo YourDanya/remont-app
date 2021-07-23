@@ -14,4 +14,20 @@ import img13 from '../../images/examplesOfWork/ex13.jpg'
 import img14 from '../../images/examplesOfWork/ex14.jpg'
 import img15 from '../../images/examplesOfWork/ex15.jpg'
 
-export const images = [img1, img2, img3, img4, img5, img6, img7, img8, img9, img10, img11, img12, img13, img14, img15]
+export const images = [
+    img1,
+    img2, 
+    img3, 
+    img4, 
+    img5, 
+    img6, 
+    img7, 
+   // img8, 
+    img9, 
+   // img10, 
+    img11, 
+    img12, 
+    img13, 
+    img14, 
+    img15
+]

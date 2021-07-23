@@ -1,7 +1,16 @@
 @import '../../_utilities'
 
 .services-container
-    height: 500px
+    margin-top: 40px
+
+    h2
+        text-align: center
+        font-size: 30px
+        margin-bottom: -20px
+        color: black
+
+.services-grid
+    min-height: 500px
     display: grid
     grid-template-columns: 1fr 1fr
     grid-gap: 10px
@@ -51,16 +60,21 @@
                 height: fit-content
 
 @media screen and ( max-width: $layout-breakpoint-small  )
-    .service
-        grid-gap: 10px
+    
 
 @media screen and ( max-width: $layout-breakpoint-medium )
-    .services-container
+    .services-grid
         grid-template-columns: 1fr
 
 @media screen and ( max-width: $layout-breakpoint-small )
 
-    .services-container
+    .services-grid
 
         .services
             grid-template-columns: 1fr
+
+            .service
+                grid-gap: 10px
+
+        .services-img
+            display: none
