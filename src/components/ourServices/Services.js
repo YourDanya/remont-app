@@ -13,7 +13,10 @@ function Services() {
                     labels.map((label, index) =>
                         <div className="service">
                             <span>{label}</span>
-                            <img src={icons[index]} alt="" />
+                            <div className="icon">
+                                {icons[index]}
+                            </div>
+
                         </div>
                     )
                 }

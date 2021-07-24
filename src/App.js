@@ -1,7 +1,7 @@
 import React from "react";
 import Nav from "./components/Nav/Nav";
 import Footer from "./components/Footer/Footer";
-import {BrowserRouter, Route} from "react-router-dom";
+import {BrowserRouter, Redirect, Route} from "react-router-dom";
 import Main from "./components/Main/Main";
 import AboutUs from "./components/AboutUs/AboutUs";
 import ExamplesOfWork from "./components/ExamplesOfWork/ExamplesOfWork";
@@ -25,6 +25,7 @@ function App(props) {
                      render={() => <Warranties/> }/>
           </div>
           <Footer/>
+          <Redirect from='/' to='/main'/>
       </BrowserRouter>
   );
 }
