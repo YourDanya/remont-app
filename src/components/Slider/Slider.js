@@ -24,7 +24,7 @@ function Slider() {
         infinite
         itemClass=""
         keyBoardControl
-        minimumTouchDrag={80}
+        minimumTouchDrag={40}
         renderButtonGroupOutside={true}
         renderDotsOutside={false}
         responsive={{
