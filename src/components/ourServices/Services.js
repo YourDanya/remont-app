@@ -16,7 +16,6 @@ function Services() {
                             <div className="icon">
                                 {icons[index]}
                             </div>
-
                         </div>
                     )
                 }
