@@ -14,6 +14,7 @@ function Slider() {
         customButtonGroup={<ButtonGroup />}
         additionalTransfrom={0}
         arrows={false}
+        autoPlay
         autoPlaySpeed={3000}
         centerMode={false}
         className="slider"
@@ -56,8 +57,7 @@ function Slider() {
         showDots={false}
         sliderClass=""
         swipeable
-        autoPlay
-        autoPlaySpeed={3000}
+        customTransition="all .5s"
       >
         {
           images.map((img, index) => 
