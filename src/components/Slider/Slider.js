@@ -56,6 +56,8 @@ function Slider() {
         showDots={false}
         sliderClass=""
         swipeable
+        autoPlay
+        autoPlaySpeed={3000}
       >
         {
           images.map((img, index) => 
