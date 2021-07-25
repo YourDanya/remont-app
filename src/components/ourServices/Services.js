@@ -7,19 +7,18 @@ import './style.sass'
 function Services() {
     return (
         <div className="services-container">
-            <h2>Наши услуги</h2>
-            <div className="services-grid">
-                <div className='services-img'></div>
-                <div className="services">
-                    {
-                        labels.map((label, index) =>
-                            <div className="service">
-                                <span>{label}</span>
-                                <img src={icons[index]} alt="" />
+            <div className='services-img'></div>
+            <div className="services">
+                {
+                    labels.map((label, index) =>
+                        <div className="service">
+                            <span>{label}</span>
+                            <div className="icon">
+                                {icons[index]}
                             </div>
-                        )
-                    }
-                </div>
+                        </div>
+                    )
+                }
             </div>
 
         </div>

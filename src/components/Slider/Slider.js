@@ -55,7 +55,6 @@ function Slider() {
         }}
         showDots={false}
         sliderClass=""
-        slidesToSlide={1}
         swipeable
       >
         {
