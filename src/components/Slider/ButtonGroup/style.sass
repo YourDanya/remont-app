@@ -6,11 +6,11 @@ $arrow-for-slider: url("../../../images/icons/arrow-for-slider.png")
 
     display: flex
     justify-content: space-between
-    width: 98%
+    width: 100%
     position: absolute
-    top: 50%
+    top: 35%
     left: 50%
-    transform: translateY(-70%) translateX(-50%)
+    transform: translateY(-50%) translateX(-50%)
     min-width: 250px
 
     button
@@ -29,16 +29,12 @@ $arrow-for-slider: url("../../../images/icons/arrow-for-slider.png")
         cursor: pointer
 
         background-position: center
-        background-size: 50% 
+        background-size: 50%
         background-repeat: no-repeat
 
     .back
         transform: scaleX(-1)
         
-        
-        
-
-
 
 @media screen and ( max-width: $layout-breakpoint-big )
     .carousel-button-group
@@ -49,11 +45,11 @@ $arrow-for-slider: url("../../../images/icons/arrow-for-slider.png")
 
 @media screen and ( max-width: $layout-breakpoint-medium )
     .carousel-button-group
+        display: none
 
         button
             background-size: 70%
             width: 10%
 
 @media screen and ( max-width: $layout-breakpoint-small )
-    .carousel-button-group
-       display: none         
+

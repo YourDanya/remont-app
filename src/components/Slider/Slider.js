@@ -4,6 +4,7 @@ import './style.sass'
 import Slide from './Slide/Slide'
 import ButtonGroup from './ButtonGroup/ButtonGroup';
 import {images} from './API'
+import {addresses} from './API'
 
 import React from 'react'
 
@@ -57,11 +58,11 @@ function Slider() {
         showDots={false}
         sliderClass=""
         swipeable
-        customTransition="all .5s"
+        customTransition="1s all"
       >
         {
           images.map((img, index) => 
-            <Slide slide={{description: {header: 'Slide Header', address: 'ЖК Царская площадь, пр. Ленинградский, 3'}, duration: `${index}`, img}} />
+            <Slide slide={{description: {header: 'Slide Header', address: addresses[index]}, duration: `${index}`, img}} />
           )
         }
       </Carousel>
