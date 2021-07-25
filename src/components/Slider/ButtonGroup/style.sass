@@ -3,7 +3,7 @@
 $arrow-for-slider: url("../../../images/icons/arrow-for-slider.png")
 
 .carousel-button-group
-    
+
     display: flex
     justify-content: space-between
     width: 98%
@@ -38,9 +38,7 @@ $arrow-for-slider: url("../../../images/icons/arrow-for-slider.png")
         
         
 
-// @media screen and ( max-width: $layout-breakpoint-small )
-//     .carousel-button-group
-//         margin-top: -200px
+
 
 @media screen and ( max-width: $layout-breakpoint-big )
     .carousel-button-group
@@ -55,3 +53,7 @@ $arrow-for-slider: url("../../../images/icons/arrow-for-slider.png")
         button
             background-size: 70%
             width: 10%
+
+@media screen and ( max-width: $layout-breakpoint-small )
+    .carousel-button-group
+       display: none         
