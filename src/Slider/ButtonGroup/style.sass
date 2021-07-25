@@ -1,0 +1,56 @@
+@import "../../../_utilities"
+
+$arrow-for-slider: url("../../../images/icons/arrow-for-slider.png")
+
+.carousel-button-group
+    display: flex
+    justify-content: space-between
+    width: 98%
+    position: absolute
+    top: 50%
+    left: 50%
+    transform: translateY(-70%) translateX(-50%)
+    min-width: 250px
+
+    button
+        height: 300px
+        width: 5%
+
+        z-index: 0
+
+        border-radius: 0
+        background-color: #00000000
+        background-image: $arrow-for-slider
+        color: white
+        border: none
+
+        font-size: 20px
+        cursor: pointer
+
+        background-position: center
+        background-size: 50% 
+        background-repeat: no-repeat
+
+    .back
+        transform: scaleX(-1)
+        
+        
+        
+
+// @media screen and ( max-width: $layout-breakpoint-small )
+//     .carousel-button-group
+//         margin-top: -200px
+
+@media screen and ( max-width: $layout-breakpoint-big )
+    .carousel-button-group
+        
+        button
+            background-size: 60%
+            width: 6%
+
+@media screen and ( max-width: $layout-breakpoint-medium )
+    .carousel-button-group
+
+        button
+            background-size: 70%
+            width: 10%
