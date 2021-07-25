@@ -22,7 +22,7 @@ class Nav extends React.Component{
                     <a href="tel:+380987792907">+380 (98) 779 2907</a>
                     </div>
                 <div className={styles.mail}>
-                    <a href="mail:sales@remontprofi.ru">
+                    <a href="mailto:sales@remontprofi.ru">
                         Abnbud2021@gmail.com</a>
                     </div>
             </div>
