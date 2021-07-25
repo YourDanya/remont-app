@@ -8,7 +8,7 @@ const Footer= () =>{
     return <div className={styles.footer}>
         <div className={mainStyles.container}>
             <div className={styles.footerSocials}>
-                <a href="https://www.google.com">
+                <a href="https://www.facebook.com/103268698695854/posts/103284195360971/?d=n&substory_index=0">
                     <FaFacebook/>
                 </a>
                 <a href="https://www.instagram.com/abn.bud/">
