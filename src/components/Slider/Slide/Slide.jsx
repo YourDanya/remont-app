@@ -4,7 +4,7 @@ import './style.sass'
 function Slide({ slide }) {
     return (
         <div className='slide'>
-            <div className='container'>
+            <div className='slide-container'>
                 <div className='sub-container'>
                     <img src={slide.img} className='slide-img' alt="" />
                     <div className="duration-container">
