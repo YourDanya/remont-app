@@ -14,7 +14,7 @@ class Nav extends React.Component{
                     <NavLink to={"/main"} onClick={this.props.toggleActiveClass}>Главная</NavLink>
                     <NavLink to={"/aboutUs"} onClick={this.props.toggleActiveClass}>Про нас</NavLink>
                     <NavLink to={"/examplesOfWork"} onClick={this.props.toggleActiveClass}>Примеры работ</NavLink>
-                    <NavLink to={"/warranties"} onClick={this.props.toggleActiveClass}>Гаррантии</NavLink>
+                    <NavLink to={"/warranties"} onClick={this.props.toggleActiveClass}>Гарантии</NavLink>
                 </div>
             </div>
             <div className={styles.navInfo}>
