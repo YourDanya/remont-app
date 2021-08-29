@@ -35,7 +35,9 @@
 }
 
 .number a{
-    font-size: 20px;
+    display: block;
+    font-size: 16px;
+    line-height: 17px;
     text-decoration: none;
     color: white;
 }

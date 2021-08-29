@@ -8,7 +8,7 @@ const Footer= () =>{
     return <div className={styles.footer}>
         <div className={mainStyles.container}>
             <div className={styles.footerSocials}>
-                <a href="https://www.facebook.com/ABN.Bud1/">
+                <a href="https://www.facebook.com/profile.php?id=100069601987597">
                     <FaFacebook/>
                 </a>
                 <a href="https://www.instagram.com/abn.bud/">
@@ -17,10 +17,10 @@ const Footer= () =>{
                 <a href="https://t.me/abnbud">
                     <FaTelegram/>
                 </a>
-                <a href="viber://chat?number=%2B380987792907">
+                <a href="viber://chat?number=%2B380999115738">
                     <FaViber/>
                 </a>
-                <a href="https://wa.me/380987792907">
+                <a href="https://wa.me/380735925381">
                     <IoLogoWhatsapp/>
                 </a>
             </div>

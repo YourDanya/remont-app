@@ -25,7 +25,7 @@ const Main = () => {
               <img src={images[index > 0 ? index - 1 : images.length - 1]} key={index} alt="" className='main-img fade-out'/>
             </div>
             <div className="title-container">
-                <div className='title'>cкидка 10% <span>на ремонт квартиры</span></div>
+                <div className='title'> <span>РЕМОНТ <br/> под ключ</span>  в Киеве и области<br/> квартир, офисов, коттеджей</div>
             </div>
         </div>
     )

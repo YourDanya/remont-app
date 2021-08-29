@@ -18,6 +18,7 @@
 
 .second{
     display: flex;
+    align-items: center;
     margin-top: 80px;
 }
 
@@ -38,12 +39,7 @@
 }
 
 
-@media (max-width: 1256px) {
-    .second{
-        align-items: center;
-    }
 
-}
 
 @media (max-width: 720px) {
     .first{

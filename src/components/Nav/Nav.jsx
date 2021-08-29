@@ -19,7 +19,8 @@ class Nav extends React.Component{
             </div>
             <div className={styles.navInfo}>
                 <div className={styles.number}>
-                    <a href="tel:+380987792907">+380 (98) 779 2907</a>
+                    <a href="tel:+380735925381">+380 (73) 592 5381</a>
+                    <a href="tel:+380999115738">+380 (99) 911 5738</a>
                     </div>
                 <div className={styles.mail}>
                     <a href="mailto:sales@remontprofi.ru">
