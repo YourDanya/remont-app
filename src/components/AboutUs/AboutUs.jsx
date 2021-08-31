@@ -5,10 +5,7 @@ import img1 from './img/image1.jpg'
 import img2 from './img/image2.jpg'
 
 const AboutUs= () =>{
-    function test(){
-        let a= (1>2) ? 1: 3
-        console.log(a)
-    }
+
     return <div className={styles.aboutUs +' '+ mainStyles.container}>
         <div className={styles.first}>
 

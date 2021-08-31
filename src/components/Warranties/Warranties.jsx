@@ -1,6 +1,5 @@
 import React from "react";
 import styles from "./Warranties.module.css"
-import mainStyles from '../../App.module.css'
 import img from "./warr_img.jpg"
 import {FaPencilAlt, FaRuler, GiInjustice} from "react-icons/all";
 

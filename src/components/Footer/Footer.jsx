@@ -2,7 +2,6 @@ import React from "react";
 import styles from './Footer.module.css'
 import mainStyles from './../../App.module.css'
 import {FaFacebook, FaTelegram, FaViber, FiInstagram, IoLogoWhatsapp} from "react-icons/all";
-import {NavLink} from "react-router-dom";
 
 const Footer= () =>{
     return <div className={styles.footer}>

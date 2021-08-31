@@ -7,9 +7,10 @@ import AboutUs from "./components/AboutUs/AboutUs";
 import ExamplesOfWork from "./components/ExamplesOfWork/ExamplesOfWork";
 import Warranties from "./components/Warranties/Warranties";
 import styles from './App.module.css'
-import Slider from './components/Slider/Slider'
 import Services from "./components/ourServices/Services";
+import ModalRender from "./components/Modal/ModalRender";
 function App(props) {
+
   return (
       <BrowserRouter >
           <Nav store={props.store}/>
@@ -25,6 +26,7 @@ function App(props) {
                      render={() => <Warranties/> }/>
           </div>
           <Footer/>
+          <ModalRender/>
           <Redirect from='/' to='/main'/>
       </BrowserRouter>
   );

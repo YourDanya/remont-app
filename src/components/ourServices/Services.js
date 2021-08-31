@@ -1,7 +1,6 @@
 import React from 'react'
 import { icons } from './API'
 import { labels } from './API'
-import servicesImg from './../../images/background/bg1.jpg'
 import './style.sass'
 
 function Services() {
