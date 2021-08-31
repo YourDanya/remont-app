@@ -1,6 +1,7 @@
 import React from "react";
 import "./Modal.css"
 import emailjs from 'emailjs-com'
+import cross from './../../images/cross.png'
 
 class Modal extends React.Component{
 
@@ -41,7 +42,7 @@ class Modal extends React.Component{
         return !this.props.active? <div></div>:
         <div className={'modal'} onClick={()=>this.props.setActive(false)}>
             <div className="modal__content" onClick={e=> e.stopPropagation()}>
-                <div className="modal__close">&times;</div>
+                <div className="modal__close" onClick={()=>this.props.setActive(false)}><img src={cross}/></div>
                 <div className="modal__subtitle">{!this.state.submit? 'Оставьте заявку': 'Спасибо за заявку'}</div>
                 <div className="modal__descr">{!this.state.submit? 'и мы свяжемся с вами': 'мы скоро с вами свяжемся'}</div>
                 <form className="feed-form feed-form_mt25" onSubmit={this.handleSubmit}>

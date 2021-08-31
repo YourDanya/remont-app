@@ -1,5 +1,6 @@
 import Modal from "./Modal";
 import React from "react";
+import {FaEnvelope, FaPhoneAlt} from "react-icons/all";
 
 class ModalRender extends React.Component{
 
@@ -15,8 +16,14 @@ class ModalRender extends React.Component{
 
     render(){
         return <div>
-            <button onClick={()=>this.setActive(true)} className="button button-small button-render">связаться с нами</button>
             <Modal active={this.state.active} setActive={this.setActive}/>
+            <div type="button" className="email-bt" onClick={()=>this.setActive(true)}>
+                <div className="text-call">
+                    {/*<i className="fa fa-envelope" aria-hidden="true"></i>*/}
+                    <i><FaPhoneAlt/></i>
+                    <span>Обратная<br/>связь</span>
+                </div>
+            </div>
         </div>
     }
 

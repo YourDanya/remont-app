@@ -90,6 +90,7 @@
 @media(max-width: 1000px) {
     .hamburger{
         display: flex;
+        z-index: 15;
     }
 
     .menu a:last-child{
@@ -98,7 +99,7 @@
 
     .menu{
         position: fixed;
-        z-index: 0;
+        z-index: 10;
         justify-content: center;
         flex-direction: column;
         top: 0;

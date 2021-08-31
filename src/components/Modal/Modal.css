@@ -1,3 +1,5 @@
+
+
 .active{
     display: block;
 }
@@ -16,10 +18,19 @@
     position: fixed;
     z-index: 1000;
     top: 0;
-    left: 0
+    left: 0;
+    transition: 0.5s all;
+}
+
+.modal__close img{
+    height: 30px;
+    position: absolute;
+    top: 10px;
+    right: 10px
 }
 
 .modal__content{
+    position: relative;
     background-color: #f2f2f2;
     padding: 38px 40px 40px 40px;
     border-radius: 12px;
@@ -27,17 +38,9 @@
     min-height: 400px;
 }
 
-.modal__close{
-    position: absolute;
-    top: 0;
-    right: -40px;
-    font-size: 41px;
-    line-height: 21px;
-    color: #c70101;
-    cursor: pointer
-}
 
 .modal__subtitle{
+    margin-top: 20px;
     color: #0d0d0d;
     font-size: 35px;
     font-weight: 700;
@@ -67,7 +70,7 @@ label.error{
 }
 
 .feed-form{
-    margin-top: 80px;
+    margin-top: 70px;
     display: flex;
     flex-direction: column;
     width: 100%;
@@ -103,19 +106,163 @@ label.error{
     text-transform: uppercase
 }
 
-.button-small{
+
+.email-bt {
+    background:#F95C18;
+    border:2px solid #F95C18;
+    border-radius:50%;
+    box-shadow:0 8px 10px rgba(249,92,24,0.3);
+    cursor:pointer;
+    height:68px;
+    text-align:center;
+    width:68px;
     position: fixed;
-    right: 5%;
-    top: 3%;
-    background-color: #c70101;
-    width: 200px;
-    height: 50px;
-    z-index: 1000;
+    right: 8%;
+    bottom: 90px;
+    z-index:999;
+    transition:.3s;
+    -webkit-animation:email-an linear 1s infinite;
+    animation:email-an linear 1s infinite;
+}
+
+.email-bt .text-call{
+    display: flex;
+    justify-content: center;
+    align-items: flex-end;
+    height:68px;
+    width:68px;
+    border-radius:50%;
+    position:relative;
+    overflow:hidden;
+}
+
+.email-bt .text-call span {
+    text-align: center;
+    color:#F95C18;
+    opacity: 0;
+    font-size: 0;
+    position:absolute;
+    right: 4px;
+    top: 22px;
+    line-height: 14px;
+    font-weight: 600;
+    text-transform: uppercase;
+    transition: opacity .3s linear;
+    font-family: 'montserrat', Arial, Helvetica, sans-serif;
+}
+
+.email-bt .text-call:hover span {
+    opacity: 1;
+    font-size: 11px;
+}
+.email-bt:hover i {
+    display:none;
+}
+
+.email-bt:hover {
+    z-index:1;
+    background:#fff;
+    transition:.3s;
+}
+.email-bt:hover i {
+    color:#38a3fd;
+    font-size:40px;
+    transition:.3s;
+}
+.email-bt i {
+    color:#fff;
+    font-size:29px;
+    transition:.3s;
+    line-height: 66px;
+}
+
+.email-bt i  {
+    -webkit-animation: opsimple 3s infinite;
+    animation: opsimple 3s infinite;
+}
+
+@-webkit-keyframes email-an {
+    0% {
+        box-shadow:0 8px 10px rgba(249,92,24,0.3),0 0 0 0 rgba(249,92,24,0.2),0 0 0 0 rgba(249,92,24,0.2)
+    }
+    40% {
+        box-shadow:0 8px 10px rgba(249,92,24,0.3),0 0 0 15px rgba(249,92,24,0.2),0 0 0 0 rgba(249,92,24,0.2)
+    }
+    80% {
+        box-shadow:0 8px 10px rgba(249,92,24,0.3),0 0 0 30px rgba(249,92,24,0),0 0 0 26.7px rgba(249,92,24,0.067)
+    }
+    100% {
+        box-shadow:0 8px 10px rgba(249,92,24,0.3),0 0 0 30px rgba(249,92,24,0),0 0 0 40px rgba(249,92,24,0.0)
+    }
+}@keyframes email-an {
+     0% {
+         box-shadow:0 8px 10px rgba(249,92,24,0.3),0 0 0 0 rgba(249,92,24,0.2),0 0 0 0 rgba(249,92,24,0.2)
+     }
+     40% {
+         box-shadow:0 8px 10px rgba(249,92,24,0.3),0 0 0 15px rgba(249,92,24,0.2),0 0 0 0 rgba(249,92,24,0.2)
+     }
+     80% {
+         box-shadow:0 8px 10px rgba(249,92,24,0.3),0 0 0 30px rgba(249,92,24,0),0 0 0 26.7px rgba(249,92,24,0.067)
+     }
+     100% {
+         box-shadow:0 8px 10px rgba(249,92,24,0.3),0 0 0 30px rgba(249,92,24,0),0 0 0 40px rgba(249,92,24,0.0)
+     }
+ }
+
+@keyframes opsimple {
+    0% {
+        opacity: 0;
+    }
+    40% {
+        opacity: 1;
+    }
+
+    80% {
+        opacity: 1;
+    }
+    100% {
+        opacity: 0;
+    }
+}
+
+@-webkit-keyframes opsimple {
+    0% {
+        opacity: 0;
+    }
+    40% {
+        opacity: 1;
+    }
+    80% {
+        opacity: 1;
+    }
+    100% {
+        opacity: 0;
+    }
+}
+
+@media (max-width: 640px) {
+    .email-bt{
+        bottom: 0px;
+        top: 70px
+    }
 }
 
 @media (max-width: 540px) {
     .modal__content{
-        min-height: 320px;
-        width: 290px
+        min-height: 350px;
+        width: 260px
     }
+
+    .button{
+        margin-top: 40px
+    }
+
+    .feed-form{
+        margin-top: 40px;
+    }
+
+    .modal__content{
+        padding: 38px 35px 35px 30px;
+    }
+
 }
