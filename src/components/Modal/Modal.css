@@ -240,12 +240,6 @@ label.error{
     }
 }
 
-@media (max-width: 640px) {
-    .email-bt{
-        bottom: 0px;
-        top: 70px
-    }
-}
 
 @media (max-width: 540px) {
     .modal__content{
