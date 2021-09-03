@@ -11,7 +11,8 @@ class Nav extends React.Component{
             <div className={mainStyles.container}>
                 <div className={styles.menu+' '+ (
                     this.props.isActive ? styles.menuActive:'')}>
-                    <NavLink to={"/main"} onClick={this.props.toggleActiveClass}>Главная</NavLink>
+                    {/* <NavLink to={"/main"} onClick={this.props.toggleActiveClass}>Главная</NavLink> */}
+                    <NavLink to={"/"} onClick={this.props.toggleActiveClass}>Главная</NavLink>
                     <NavLink to={"/aboutUs"} onClick={this.props.toggleActiveClass}>Про нас</NavLink>
                     <NavLink to={"/examplesOfWork"} onClick={this.props.toggleActiveClass}>Примеры работ</NavLink>
                     <NavLink to={"/warranties"} onClick={this.props.toggleActiveClass}>Гарантии</NavLink>
