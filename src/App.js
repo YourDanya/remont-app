@@ -15,7 +15,7 @@ function App(props) {
       <BrowserRouter >
           <Nav store={props.store}/>
           <div className={styles.appContent}>
-              <Route path='/main' exact
+              <Route path='/' exact
                      render={() => <div><Main/><Services />
                             </div> }/>
               <Route path='/aboutUs'
@@ -27,7 +27,7 @@ function App(props) {
           </div>
           <Footer/>
           <ModalRender/>
-          <Redirect from='/' to='/main'/>
+          {/* <Redirect from='/' to='/main'/> */}
       </BrowserRouter>
   );
 }
